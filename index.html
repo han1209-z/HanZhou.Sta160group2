@@ -162,6 +162,7 @@
       }
 
       const data = await res.json();
+      console.log("Response:", data); 
 
       resultDiv.textContent =
         `BERT prediction: ${data.bert_label} (confidence: ${data.bert_confidence})\n` +
