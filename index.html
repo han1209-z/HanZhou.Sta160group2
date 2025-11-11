@@ -164,7 +164,7 @@
       const data = await res.json();
 
       resultDiv.textContent =
-        `BERT prediction: ${data.bert_label} (confidence: ${data.confidence})\n` +
+        `BERT prediction: ${data.bert_label} (confidence: ${data.bert_confidence})\n` +
         `ChatGPT: ${data.gpt_label}`;
     } catch (err) {
       console.error(err);
