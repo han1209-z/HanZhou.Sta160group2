@@ -166,6 +166,7 @@
 
       resultDiv.textContent =
         `BERT prediction: ${data.bert_label} (confidence: ${data.bert_confidence})\n` +
+        `XGBoost: ${data.xgb_label} (confidence: ${data.xgb_confidence})\n` +
         `ChatGPT: ${data.gpt_label}`;
     } catch (err) {
       console.error(err);
